@@ -29,7 +29,7 @@ h2 {
   padding-bottom: 30px;
   text-align: left;
   width: 70%;
-  border: 1px dotted ;
+  border: 1px dotted red;
 }
 
 p {
