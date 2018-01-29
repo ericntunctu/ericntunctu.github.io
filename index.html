@@ -49,17 +49,19 @@ src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLor
     <br>$$a=\frac{\left(\Delta _1+\Delta _2-\Delta _3\right)}{2},b=\frac{\left(\Delta_3+\Delta_2-\Delta_1\right)}{2},c=\frac{\left(\Delta_1+\Delta_3-\Delta_2\right)}{2}.$$<br>
     重點在於，當我們打算使用在四點的correlation function時候，會發現它沒辦法固定住: 
     <br>$$<\mathcal{O}_1\left(x_1\right)\mathcal{O}_2\left(x_2\right)\mathcal{O}_3\left(x_3\right)\mathcal{O}_4\left(x_4\right)> =\left(\frac{x_{24}}{x_{14}}\right)^{\Delta_{12}}\left(\frac{x_{14}}{x_{13}}\right)^{\Delta_{34}}\frac{g(u,v)}{x_{12}^{\Delta 1+\Delta 2}x_{34}^{\Delta_3+\Delta_4}}.$$ <br>
-     此時 $$u=\left(\frac{x_{12}x_{34}}{x_{13}x_{24}}\right)^2,v=\left(\frac{x_{12}x_{34}}{x_{23}x_{14}}\right)^2.$$，$$(u, v)$$ 叫做 conformal cross ratio, 對於具有spin的情況我們需要更有效率的做法，叫做embedding formalism 在這裡不多說惹. </p>
+     此時 $$u=\left(\frac{x_{12}x_{34}}{x_{13}x_{24}}\right)^2,v=\left(\frac{x_{12}x_{34}}{x_{23}x_{14}}\right)^2.$$，$$(u, v)$$ 叫做 conformal cross ratio, 
+     注意到: (u, v)是conformal invariant. 所以g(u, v) can be any 函數. 對於具有spin的情況我們需要更有效率的做法，叫做embedding formalism 在這裡不多說惹. </p>
     
     
     <h2>OPE</h2>
-    <p> OPE是一個神奇的物件，如果我們假定OPE是正確的，那麼我們就有了很妙的東西，簡單的說ope 就是當你把兩個field成在一起時候可以把它展開成其他field:
-    $$ \mathcal{O}_1\left(x_1\right)\mathcal{O}_2\left(x_2\right)=\sum_{\mathcal{O}} \lambda_{12\mathcal{O}}\mathcal{O}\left(x_{12},\partial y\right)\mathcal{O}(y)|{y=0} $$  </br> </p>
+    <p> 似乎到了上一步，我們就做不下去了，這時需要一個強大的物件，就是"OPE"，OPE是一個神奇的物件，如果我們假定OPE是正確的，那麼我們就有了很妙的東西，簡單的說ope 就是當你把兩個field成在一起時候可以把它展開成其他field:
+    $$ \mathcal{O}_1\left(x_1\right)\mathcal{O}_2\left(x_2\right)=\sum_{\mathcal{O}} \lambda_{12\mathcal{O}}\mathcal{O}\left(x_{12},\partial y\right)\mathcal{O}(y)|{y=0} $$  </br>
+  這有啥麼用? 簡單說: 就是 這樣我們就可以把四點的函數，related to 三點的函數</p>
     
     
     
     <h2>Scalar And Spinning Conformal Blocks</h2>
-    <p> Conformal Blocks 是cft的重點物件之一，後面的conformal bootstrap都要依賴他，計算conformal block 主要是運用以下方法 Conformal Partial Waves: Further Mathematical Results using the Casimir differential equation: 使用 OPE expasion, g(u, v) 可以被分解為conformal blocks: 
+    <p> Conformal Blocks 是cft的最後一個重點物件之一，後面的conformal bootstrap都要依賴他，計算conformal block 主要是運用以下方法 Conformal Partial Waves: Further Mathematical Results using the Casimir differential equation: 使用 OPE expasion, g(u, v) 可以被分解為conformal blocks: 
     <br>$$ \left(\sum_{i=4} M_{iAB}\right)<\mathcal{O}_1\left(P_1\right)\mathcal{O}_2\left(P_2\right)\mathcal{O}_3\left(P_3\right)\mathcal{O}_4\left(P_4\right)>=0 $$<br> 
     <br>$$ \frac{1}{2}M_{AB}M^{AB}\mathcal{O}_i\left(P_i\right)=c_{\Delta ,l}\mathcal{O}_i\left(P_i\right). $$ <br>
     <br> $$ c_{\Delta ,l}=\Delta (\Delta -d)+l(l+d-2). $$ <br>
