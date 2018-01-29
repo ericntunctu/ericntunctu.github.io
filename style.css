@@ -10,6 +10,9 @@ body {
   padding: 0;
 }
 
+.b {
+color: white;
+}
 
 
 h1 {
@@ -39,14 +42,7 @@ p {
   width: 100%;
 }
 
-.byline {
-  font-family: Helvetica;
-  color: rgba(255, 255, 255, 0.5);
-  float: left;
-  font-size: 14px;
-  padding-left: 10px;
-  text-transform: uppercase;
-}
+
 
 .caption {
   display: block;
