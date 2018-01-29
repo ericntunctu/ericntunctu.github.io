@@ -66,26 +66,29 @@ src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLor
     We get 
     <br>$$ \left(\frac{1}{2}\left(M_{1AB}+M_{2AB}\right){}^2-c_{\Delta ,l}\right)W_{\mathcal{O}_{\Delta, J}}\left(P_i\right)=0. $$<br>
     <p>Dolan and Osborn 計算了 closed form expressions for the conformal blocks of an arbitrary spin-l primary in d = 2, 4. 奇數維度情況則沒有closed form, 只有積分表達式. </p>
-  <br>$$ W{\mathcal{O}_{\Delta, l}}=\left(\frac{x_{24}}{x_{14}}\right)^{\Delta_{12}}\left(\frac{x_{14}}{x_{13}}\right)^{\Delta_{34}}\frac{g{\Delta, l}(u,v)}{x_{12}^{\Delta _1+\Delta 2}x_{34}^{\Delta _3+\Delta _4}}. $$<br>
+  <br>$$ W_{\mathcal{O}_{\Delta, l}}=\left(\frac{x_{24}}{x_{14}}\right)^{\Delta_{12}}\left(\frac{x_{14}}{x_{13}}\right)^{\Delta_{34}}\frac{g{\Delta, l}(u,v)}{x_{12}^{\Delta _1+\Delta 2}x_{34}^{\Delta _3+\Delta _4}}. $$<br>
  <p>此刻 $$(\Delta, l)$$ 是中間可能出現的primary field. <p>
     
     
     <h2>Conformal Bootstrap</h2>
     <p>Conformal Bootstrap 可以視為conformal field theory的心臟，我不知道bootstrap要怎麼翻譯，不過也不重要，重要的是Conformal Bootstrap是用來解保角場論，一開始先假定你的CFT的spectrum，有哪些 primary fields，決定它的scaling dimension和representation，然後開始Conformal Bootstrap來檢測是否滿足crossing symmetry，所以我們可以講，一個well defined的CFT 就是自洽的OPE和a set of primary fields.一定承認了這個定義，那這個場論原則上就被全部解出，因為更高點Correlation Function都可以被OPE簡化成四點的，這樣就完整的解出這個場論(以下演示一下方法)。 
 We have the conformal block expansion (四個一樣的scalar):</p>
-    
-    
-    
-    
-    
-    
-    
-    
-  </div>
-
+    $$<\phi_1\left(x_1\right)\phi_2\left(x_2\right)\phi_3\left(x_3\right)\phi_4\left(x_4\right)>=\frac{g(u,v)}{x_{12}^{2\Delta_{\phi}}x_{34}^{2\Delta_{\phi}}}$$ 
+    $$g(u,v)=\Sigma\lambda_{\phi\phi\mathcal{O}}^2 g_{\Delta,l}(u, v)$$
+<p>如果我們交換展開的順序1換成3,2換成4 則會有</p>
+$$g(u,v)=(\frac{u}{v})^{\Delta_{\phi}} g(v, u)$$
+    </div>
+  <p> 這個複雜的條件就叫做crossing symmetry. 也就是bootstrap condition.一般會使用semidefinite programming來解決這個問題</p>
   <div class="image">
     <p class="caption">一些圖片</p>
   </div>
+    
+    
+    
+    
+    
+    
+
   <h2>一些目前研究的狀況和前景</h2>
   <p>CFT復甦大概是在2008年開始:計算 3d ising model 的臨界點所導出來的，然後大家開始做了4維的Conformal Bootstrap，不只限於4個scalar，也有人在研究三維的fermion和增加了超對稱的cft.
 另一個方向是來自1995 Juan Maldacena 的 conjecture called <a href="https://en.wikipedia.org/wiki/AdS/CFT_correspondence"target="_block"> AdS/CFT correspondence </a>可以藉由計算Witten Diagram(類似於費曼圖在AdS空間中)來得到對應的CFT的部分資訊。這些類似文章在arxiv都有很多介紹惹。</p>
