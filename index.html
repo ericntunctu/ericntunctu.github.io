@@ -33,7 +33,14 @@ src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLor
       所以在cft裡面，所有的field content就是它具有那些primary operator。
       以下文章只focus在三維以上的保角場論(因為二為時候的conformal group 是 infinite generator 的 virasoro algebra)。</p>
     <h2>Correlation Function</h2>
-     <h2>OPE</h2>
+    <p> 首先要知道場論的目地就是要算correlation function，在一般場論裡面correlation function牽涉到scattering amplitude，這當然很正常，因為一個物理理論，最重要的就是把你能觀察的東西跟理論能夠計算的東西作連結，然後做實驗觀察它，所以一般的場論裡面，首先寫下有哪些field(比方電子，光子，一些夸克等等)再寫下一些interaction，然後開始計算它的correlation function利用費曼圖，需要把所有可能的費曼圖加起來，中間會遇到一些問題(renormalization:重整化)，但原理上就是如此，所以計算上是非常繁瑣的，需要用到大量特殊函數和高維空間的積分等等等。</p>
+    <p> 但保角場論就不一樣啦，由上述的statement，我們知道，只需要計算primary operator的correlation function 即可，而且不用利用費曼圖的技巧，也沒有重整化的問題，correlation function of two point 和 three point 都可以完全被保角對稱fixed住，這當然就非常強，和一般場論明顯不同 我們可用保角變換來確定兩點純量的函數，計算來自 Lectures on Conformal Field Theory:
+一般的說 保角變換定義成:
+       <br>$$ g_{\mu\nu}'(x')=c(x)\delta_{\mu\nu}(x), b(x)=\sqrt{c(x)} $$ <br>
+      一個scalar primary field定義成:
+       <br>$$x \rightarrow x' , \mathcal{O}'(x')=b(x)^{-\Delta}\mathcal{O}(x) $$ <br>
+    
+    <h2>OPE</h2>
     <p> OPE是一個神奇的物件，如果我們假定OPE是正確的，那麼我們就有了很妙的東西，簡單的說ope 就是當你把兩個field成在一起時候可以把它展開成其他field:</p>
     <br>$$ \mathcal{O}_1\left(x_1\right)\mathcal{O}_2\left(x_2\right)=\sum {\mathcal{O}} \lambda_{12\mathcal{O}}\mathcal{O}\left(x{12},\partial y\right)\mathcal{O}(y)|{y=0} $$  </br>
      
